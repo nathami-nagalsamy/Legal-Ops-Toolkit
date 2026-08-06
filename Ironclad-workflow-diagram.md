@@ -1,20 +1,16 @@
 # Ironclad Contract Workflow
 
-​```mermaid
-flowchart TD
-    A[Request Submitted] --> B{Contract Type?}
-    B -->|Standard NDA| C[Auto-Generate from Template]
-    B -->|Custom Agreement| D[Route to Attorney Review]
-    C --> E[Auto-Route for Approval]
-    D --> E
-    E --> F{Risk Flags?}
-    F -->|Liability / Indemnity / Payment Terms| G[Escalate to Senior Counsel]
-    F -->|None| H[Standard Approval Path]
-    G --> I[DocuSign Envelope Created]
-    H --> I
-    I --> J[Signature Routing & Tracking]
-    J --> K[Executed & Archived in Repository]
-​```
+1. **Request Submitted** — intake begins
+2. **Contract Type Check** — Standard NDA or Custom Agreement?
+   - Standard NDA → Auto-generated from template
+   - Custom Agreement → Routed to attorney review
+3. **Auto-Route for Approval**
+4. **Risk Flag Check**
+   - Liability / Indemnity / Payment Terms → Escalated to Senior Counsel
+   - No flags → Standard approval path
+5. **DocuSign Envelope Created**
+6. **Signature Routing & Tracking**
+7. **Executed & Archived in Repository**
 
 **Result:** This structure reduced contract cycle time by 65% across
 ~2,000 annual agreements by automating routing for standard agreements
